@@ -237,6 +237,9 @@ ZMK_MACRO(win_sleep,
 #define LED_RGB_BRI &rgb_ug RGB_BRI
 #define LED_RGB_BRD &rgb_ug RGB_BRD
 
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
+
 /* Keymap */
 
 // The below statement makes both &tog and &mo SYS layer not working
@@ -303,7 +306,7 @@ ZMK_LAYER(num,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     &kp AT        &kp N1        &kp N2        &kp N3        &kp HASH        X_MB     ___           ___           ___           ___           ___             X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-    X_LH                                               ___           ___             X_MH     ___           ___                                                       X_RH
+    X_LH                                               ___           ___             X_MH_N   ___           ___                                                       X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 , &scroll_encoder
 )
