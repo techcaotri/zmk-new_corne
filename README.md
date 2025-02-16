@@ -37,8 +37,10 @@
 
      ```
 
-[^anim]: The Mario animation for peripheral display thanks to [Gpeye](https://github.com/GPeye/mario-peripheral-animation)
+  Mario animation:
 <br/>![mario](images/mario.gif)
+
+[^anim]: The Mario animation for peripheral display thanks to [Gpeye](https://github.com/GPeye/mario-peripheral-animation)
 
 
 # 睫毛外设 (Eyelash Peripherals) Corne ZMK Repository
