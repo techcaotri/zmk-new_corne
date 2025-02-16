@@ -2,6 +2,8 @@
 - [English](README.md)
 
 # TriPham Build Guide
+![](images/eyelash_corne.avif)
+
 ## Build ZMK firmware instructions
   1. Clone this repository
   2. Create the `zmk-config` directory on the same level as `zmk-new_corne`
@@ -36,6 +38,7 @@
      ```
 
 [^anim]: The Mario animation for peripheral display thanks to [Gpeye](https://github.com/GPeye/mario-peripheral-animation)
+<br/>![mario](images/mario.gif)
 
 
 # 睫毛外设 (Eyelash Peripherals) Corne ZMK Repository
