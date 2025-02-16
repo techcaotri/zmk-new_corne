@@ -16,7 +16,7 @@
      west init -l "$(pwd)/config"
      west update
      ```
-  5. Build the zmk firmware inside `zmk-config`:
+  5. Build the zmk firmware with/without Mario animation[^anim] inside `zmk-config`:
      ```
      cd zmk-config
      source ../.venv/bin/activate
@@ -29,7 +29,13 @@
      
      echo "Build nice_view - eyelash_corne_right"
      west build -s zmk/app -d "$(pwd)/build/right" -b "eyelash_corne_right"  -- -DZMK_CONFIG="$(pwd)/config" -DSHIELD="nice_view" -DZMK_EXTRA_MODULES="$(pwd)/../zmk-new_corne"
+
+     echo "Build nice_view_custom with Mario animation - eyelash_corne_right"
+     west build -s zmk/app -d "$(pwd)/build/right" -b "eyelash_corne_right"  -- -DZMK_CONFIG="$(pwd)/config" -DSHIELD="nice_view_custom" -DZMK_EXTRA_MODULES="$(pwd)/../zmk-new_corne"
+
      ```
+
+[^anim] Mario animation thanks to [Gpeye](https://github.com/GPeye/mario-peripheral-animation)
 
 
 # 睫毛外设 (Eyelash Peripherals) Corne ZMK Repository
